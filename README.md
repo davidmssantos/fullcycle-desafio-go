@@ -4,7 +4,7 @@ O desafio consiste em criar uma imagem Docker utilizando a linguagem GO, de modo
 
 O requisito fundamental deste desafio era manter o tamanho da imagem final abaixo de 2MB.
 
-[Você pode acessar aqui](https://hub.docker.com/r/davidmsantos/fullcycle).
+[Link Docker](https://hub.docker.com/r/davidmsantos/fullcycle).
 
 Abaixo temos um print para demonstrar a diferença do tamanho da imagem.
 
