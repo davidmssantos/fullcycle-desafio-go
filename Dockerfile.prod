@@ -1,0 +1,15 @@
+FROM golang:latest AS builder
+
+LABEL maintainer=https://github.com/davidmssantos
+
+WORKDIR /app
+COPY ./hello-world.go .
+RUN go build -ldflags '-w -s' hello-world.go
+
+
+FROM scratch
+WORKDIR /app
+
+COPY --from=builder /app/hello-world .
+
+CMD ["/app/hello-world"]
